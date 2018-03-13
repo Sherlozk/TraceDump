@@ -14,4 +14,4 @@ The same as TraceUtility
 - Update `Allocations`instrument.(*Now you can get persisentBytes size during each second*)
 
 ## TODO
-- Parse `Time Profiler`instrument.(*It dosen't work from Xcode 9.0*)
+- Parse `Time Profiler`instrument.(*Old way dosen't work from Xcode 9.0*)
