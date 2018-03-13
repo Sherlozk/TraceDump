@@ -1,7 +1,9 @@
 # TraceDump
 
 This project is second develop base on [TraceUtility](https://github.com/Qusic/TraceUtility)
+
 [Blog post](https://sherlockz.github.io/2018/02/14/traceDump/)(in Chinese 中文)
+
 ## Usage
     $./traceDump path/to/xxx.trace
 ## Output
