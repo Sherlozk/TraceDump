@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  TraceDump
+//
+//  Created by 张恒瑜 on 2018/2/9.
+//  Copyright © 2018年 张恒瑜. All rights reserved.
+//
+#import <objc/runtime.h>
+#import <AppKit/AppKit.h>
+
+
+#define LKPrint(format, ...) CFShow((__bridge CFStringRef)[NSString stringWithFormat:format, ## __VA_ARGS__])
+#define LKIvarCast(object, name, type) (*(type *)(void *)&((char *)(__bridge void *)object)[ivar_getOffset(class_getInstanceVariable(object_getClass(object), #name))])
+#define LKIvar(object, name) LKIvarCast(object, name, id const)
